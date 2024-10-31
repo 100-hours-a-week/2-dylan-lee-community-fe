@@ -1,0 +1,27 @@
+.h2-title {
+  font-size: 32px;
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.edit-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5%;
+}
+
+label,
+p {
+  margin-bottom: 8px;
+}
