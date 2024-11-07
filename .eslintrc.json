@@ -4,7 +4,21 @@
     "rules": {
         "indent": ["error", 4],
         "no-console": "off",
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "import/extensions": [
+            "error",
+            "always",
+            {
+                "js": "always",
+                "jsx": "always",
+                "ts": "always",
+                "tsx": "always"
+            }
+        ],
+        "no-underscore-dangle": [
+            "error",
+            { "allow": ["__dirname", "__filename"] }
+        ]
     },
     "env": {
         "browser": true,
