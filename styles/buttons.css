@@ -1,0 +1,107 @@
+.buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+button[type='submit'] {
+    padding: 10px 25px;
+    background-color: #aaa0e6;
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-small {
+    border-radius: 60px;
+}
+
+.button-large {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.hover-button:hover {
+    background-color: #7f6aee;
+}
+
+.invisible-button {
+    padding: 3px;
+    background-color: transparent; /* 투명 배경 */
+    color: #000000; /* 글자색 */
+    font-size: 14px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.back-button {
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/back_nav.png'); /* 이미지 경로 */
+    background-size: cover; /* 이미지를 버튼 크기에 맞게 조정 */
+    background-repeat: no-repeat; /* 이미지를 반복하지 않음 */
+    border: none; /* 기본 테두리 제거 */
+    cursor: pointer; /* 커서 모양 변경 */
+    background-color: transparent; /* 배경색을 투명으로 설정 */
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-buttons button {
+    margin-left: 8px; /* 버튼 사이 여백 추가 */
+    background-color: transparent;
+    border: 1px solid #aaa0e6;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.reaction-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reaction-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    width: 90px;
+    padding: 14px;
+    margin: 4px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+/* 모달 버튼 */
+.modal-actions > button {
+    margin: 10px 8px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    width: 127px;
+}
+
+#confirm-action {
+    background-color: #c4a5fa;
+    color: #242424;
+}
+
+#cancel-action {
+    background-color: #242424;
+    color: #ffffff;
+}
