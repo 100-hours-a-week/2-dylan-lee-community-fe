@@ -1,0 +1,38 @@
+<div class="h2-title">회원정보수정</div>
+<form class="edit-form-wrapper" action="/edit_profile" method="post">
+    <div class="form-group">
+        <label for="profile-picture" class="profile-label">프로필 사진*</label>
+        <div class="signin-profile-picture">
+            <label for="profile-picture" class="profile-image-container">
+                <input
+                    type="file"
+                    id="profile-picture"
+                    accept="image/*"
+                    class="profile-image-input"
+                />
+                <div class="profile-image-circle"></div>
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">이메일</label>
+        <p id="gap-between">startupcode@gmail.com</p>
+    </div>
+    <div class="form-group">
+        <label for="nickname">닉네임</label>
+        <input
+            type="text"
+            id="nickname"
+            name="닉네임"
+            placeholder="닉네임을 입력하세요"
+            required
+        />
+        <div class="helper-text" id="nickname-message"></div>
+    </div>
+    <div class="buttons">
+        <button type="submit" class="button-large">수정하기</button>
+        <button type="button" class="invisible-button" id="delete-account">
+            회원 탈퇴
+        </button>
+    </div>
+</form>

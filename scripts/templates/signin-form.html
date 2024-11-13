@@ -1,0 +1,72 @@
+<form class="form-wrapper" action="/join" method="post">
+    <div class="form-group">
+        <label for="profile-picture" class="profile-label">프로필 사진</label>
+        <div class="helper-text" id="image-message"></div>
+        <label for="profile-image" class="profile-image-container">
+            <input
+                type="file"
+                id="profile-image"
+                accept="image/*"
+                class="profile-image-input"
+            />
+            <img
+                id="profile-image-preview"
+                class="profile-image-circle"
+                alt="Profile Image"
+                style="display: none"
+            />
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="email">이메일*</label>
+        <input
+            type="text"
+            id="email"
+            name="이메일"
+            placeholder="이메일을 입력하세요"
+            required
+        />
+        <div class="helper-text" id="email-message"></div>
+    </div>
+    <div class="form-group">
+        <label for="password">비밀번호*</label>
+        <input
+            type="password"
+            id="password"
+            name="비밀번호"
+            placeholder="비밀번호를 입력하세요"
+            required
+        />
+        <div class="helper-text" id="password-message"></div>
+    </div>
+    <div class="form-group">
+        <label for="password-check">비밀번호 확인*</label>
+        <input
+            type="password"
+            id="password-check"
+            name="비밀번호 확인"
+            placeholder="비밀번호를 한번 더 입력하세요"
+            required
+        />
+        <div class="helper-text" id="password-check-message"></div>
+    </div>
+    <div class="form-group">
+        <label for="nickname">닉네임*</label>
+        <input
+            type="text"
+            id="nickname"
+            name="닉네임"
+            placeholder="닉네임을 입력하세요"
+            required
+        />
+        <div class="helper-text" id="nickname-message"></div>
+    </div>
+    <div class="buttons">
+        <button type="submit" data-action="signin" class="button-large">
+            회원가입
+        </button>
+    </div>
+</form>
+<button type="button" data-action="login-form" class="invisible-button">
+    로그인하러 가기
+</button>
