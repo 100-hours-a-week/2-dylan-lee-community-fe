@@ -1,18 +1,32 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "indent": ["error", 4],
-    "no-console": "off",
-    "prettier/prettier": "error"
-  },
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  }
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "indent": ["error", 4],
+        "no-console": "off",
+        "prettier/prettier": "error",
+        "import/extensions": [
+            "error",
+            "always",
+            {
+                "js": "always",
+                "jsx": "always",
+                "ts": "always",
+                "tsx": "always"
+            }
+        ],
+        "no-underscore-dangle": [
+            "error",
+            { "allow": ["__dirname", "__filename"] }
+        ]
+    },
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    }
 }
