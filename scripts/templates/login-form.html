@@ -1,0 +1,36 @@
+<form class="form-wrapper" action="/login" method="post">
+    <div class="form-group">
+        <label for="email">이메일</label>
+        <input
+            type="email"
+            id="email"
+            name="이메일"
+            placeholder="이메일을 입력하세요"
+            required
+        />
+        <div class="helper-text" id="email-message"></div>
+    </div>
+    <div class="form-group">
+        <label for="password">비밀번호</label>
+        <input
+            type="password"
+            id="password"
+            name="비밀번호"
+            placeholder="비밀번호를 입력하세요"
+            required
+        />
+        <div class="helper-text" id="password-message"></div>
+    </div>
+    <div class="buttons">
+        <button type="submit" data-action="login" class="button-large">
+            로그인
+        </button>
+        <button
+            type="button"
+            data-action="signin-form"
+            class="invisible-button"
+        >
+            회원가입
+        </button>
+    </div>
+</form>

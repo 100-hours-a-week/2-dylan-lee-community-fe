@@ -1,0 +1,63 @@
+.h2-title {
+    font-size: 32px;
+    margin-top: 10vh;
+}
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    height: 0%;
+}
+
+.edit-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding-top: 15px;
+}
+
+.buttons .button-large {
+    font-size: 14px; /* 원하는 크기로 변경 */
+    /* 다른 스타일도 추가 가능 */
+}
+
+#not-small {
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    width: 30%;
+    align-self: center;
+}
+
+.small-profile-container {
+    border: none;
+}
+
+label,
+p {
+    align-self: flex-start;
+}
+
+#gap-between {
+    margin: 8px 0;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}
